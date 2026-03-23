@@ -1,0 +1,20 @@
+[project]
+name = "smart-delivery-openenv"
+version = "0.1.0"
+description = "Smart adaptive delivery route environment for RL evaluation."
+requires-python = ">=3.10"
+dependencies = [
+  "openenv-core",
+  "huggingface_hub",
+  "pyyaml",
+]
+
+[project.scripts]
+server = "server:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["env", "tasks", "grader", "server", "test_env"]

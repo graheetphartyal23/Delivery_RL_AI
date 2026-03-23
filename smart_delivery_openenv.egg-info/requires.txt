@@ -1,0 +1,3 @@
+openenv-core
+huggingface_hub
+pyyaml

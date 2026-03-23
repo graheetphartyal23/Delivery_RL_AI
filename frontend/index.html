@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart AI Delivery - Bangalore</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <main class="map-wrap">
+      <div id="map"></div>
+    </main>
+
+    <aside class="panel floating">
+      <h1>Smart AI Delivery</h1>
+      <p class="sub">Live navigation mode</p>
+
+      <label for="destination">Destination</label>
+      <input id="destination" type="text" placeholder="e.g. Whitefield" value="Whitefield" />
+      <button id="startBtn">Start Delivery</button>
+
+      <div class="stats">
+        <h2>Live Stats</h2>
+        <div><span>Fuel:</span><b id="fuel">-</b></div>
+        <div><span>Traffic:</span><b id="traffic">-</b></div>
+        <div><span>Q-State:</span><b id="qstate">-</b></div>
+        <div><span>Decision:</span><b id="decision">-</b></div>
+        <div><span>Reward:</span><b id="reward">-</b></div>
+        <div><span>Distance Left:</span><b id="distance">-</b></div>
+        <div><span>Status:</span><b id="status">Idle</b></div>
+      </div>
+      <div class="stats">
+        <h2>Route Options</h2>
+        <ul id="routesList"></ul>
+      </div>
+      <div class="stats">
+        <h2>Turn-by-turn</h2>
+        <ol id="directionsList"></ol>
+      </div>
+      <div class="stats">
+        <h2>Top Learned Q-Values</h2>
+        <ul id="qtableList"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

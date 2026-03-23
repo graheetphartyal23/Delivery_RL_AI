@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #14213d;
+}
+
+.layout {
+  position: relative;
+  height: 100vh;
+}
+
+.panel {
+  padding: 18px;
+  background: #ffffff;
+}
+
+.floating {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 360px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  z-index: 900;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(20, 33, 61, 0.18);
+  border: 1px solid #d7deeb;
+}
+
+.panel h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sub {
+  margin: 8px 0 18px;
+  color: #52627b;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b7c4da;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.stats {
+  margin-top: 20px;
+  background: #f8fbff;
+  border: 1px solid #d6e3f6;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.stats h2 {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.stats div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px dashed #d6deee;
+}
+
+.stats div:last-child {
+  border-bottom: none;
+}
+
+#routesList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+#routesList li {
+  margin: 6px 0;
+  color: #22324d;
+}
+
+#qtableList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+#qtableList li {
+  margin: 6px 0;
+  color: #1f2f4c;
+  font-size: 12px;
+}
+
+.map-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #e5e7eb;
+}
+
+#directionsList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+#directionsList li {
+  margin: 6px 0;
+  color: #2c3f5e;
+  font-size: 13px;
+}

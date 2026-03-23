@@ -5,7 +5,6 @@ This project upgrades the delivery RL demo into a real-world inspired navigation
 - Real destination geocoding
 - Real road routes (OpenRouteService)
 - Q-learning agent for route selection
-- Live Leaflet dashboard with moving vehicle marker
 
 ## Architecture
 
